@@ -1,0 +1,739 @@
+local menu = Instance.new("ScreenGui")
+menu.Parent = game.Players.LocalPlayer.PlayerGui
+
+local menu1a = Instance.new("TextButton")
+menu1a.Size = UDim2.new(0, 50, 0, 50)
+menu1a.Position = UDim2.new(0.5, 300, 0.5, -160) 
+menu1a.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+menu1a.Text = " "
+menu1a.ZIndex = 2
+menu1a.Parent = menu
+menu1a.Active = true
+menu1a.Draggable = true
+	
+local corner = Instance.new("UICorner")
+corner.CornerRadius = UDim.new(0, 7)
+corner.Parent = menu1a
+
+local menu1 = Instance.new("Frame")
+menu1.Size = UDim2.new(0, 54, 0, 54)
+menu1.Position = UDim2.new(0, -2, 0, -2)
+menu1.BackgroundColor3 = Color3.fromRGB(230, 230, 230)
+menu1.ZIndex = 1
+menu1.Parent = menu1a
+
+local corner = Instance.new("UICorner")
+corner.CornerRadius = UDim.new(0, 7)
+corner.Parent = menu1
+
+local LogoM1 = Instance.new("ImageLabel")
+LogoM1.Size = UDim2.new(0, 50, 0, 50)
+LogoM1.Position = UDim2.new(0.5, -25, 0.5, -25)
+LogoM1.BackgroundTransparency = 1
+LogoM1.Image = "rbxassetid://16807904361"
+LogoM1.ZIndex = 3
+LogoM1.Parent = menu1a
+
+local Gui1o = Instance.new("Frame")
+Gui1o.Size = UDim2.new(0, 409, 0, 254)
+Gui1o.Position = UDim2.new(0.5, -250, 0.5, -170)
+Gui1o.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Gui1o.BackgroundTransparency = 0.4
+Gui1o.BorderSizePixel = 2
+Gui1o.Active = true
+Gui1o.Draggable = true
+Gui1o.Parent = menu
+
+local corner = Instance.new("UICorner")
+corner.CornerRadius = UDim.new(0, 7)
+corner.Parent = Gui1o
+
+local Gui2o = Instance.new("Frame")
+Gui2o.Size = UDim2.new(0, 405, 0, 250)
+Gui2o.Position = UDim2.new(0,2,0,2)
+Gui2o.BackgroundColor3 = Color3.new(0, 0, 0)
+Gui2o.BorderSizePixel = 2
+Gui2o.Parent = Gui1o
+
+local corner = Instance.new("UICorner")
+corner.CornerRadius = UDim.new(0, 7)
+corner.Parent = Gui2o
+
+local Gui3o = Instance.new("Frame")
+Gui3o.Size = UDim2.new(0, 405, 0, 30)
+Gui3o.Position = UDim2.new(0,2,0,2)
+Gui3o.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Gui3o.BorderSizePixel = 2
+Gui3o.Parent = Gui1o
+	
+local corner = Instance.new("UICorner")
+corner.CornerRadius = UDim.new(0, 7)
+corner.Parent = Gui3o
+
+local Gui4o = Instance.new("Frame")
+Gui4o.Size = UDim2.new(0, 405, 0, 10)
+Gui4o.Position = UDim2.new(0, 2, 0, 28)
+Gui4o.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Gui4o.BorderSizePixel = 0
+Gui4o.Parent = Gui1o
+
+local Pal1 = Instance.new("Frame")
+Pal1.Size = UDim2.new(0, 2, 0, 36)
+Pal1.Position = UDim2.new(0, 42, 0, 2)
+Pal1.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Pal1.BackgroundTransparency = 0.4
+Pal1.BorderSizePixel = 0
+Pal1.Parent = Gui1o
+
+local LogoM4 = Instance.new("ImageLabel")
+LogoM4.Size = UDim2.new(0, 37, 0, 37)
+LogoM4.Position = UDim2.new(0, 4, 0, 3)
+LogoM4.BackgroundTransparency = 1
+LogoM4.Image = "rbxassetid://16807904361"
+LogoM4.Parent = Gui1o
+
+local text1 = Instance.new("TextLabel")
+text1.Size = UDim2.new(0, 0, 0, 50)
+text1.Position = UDim2.new(0, 120, 0, -3)
+text1.Text = "Suslik Hub"
+text1.TextSize = 23
+text1.TextColor3 = Color3.fromRGB(255, 255, 255)
+text1.BackgroundTransparency = 10
+text1.Parent = Gui1o
+
+local closeButton = Instance.new("TextButton")
+closeButton.Name = "CloseButton"
+closeButton.Size = UDim2.new(0, 40, 0, 40)
+closeButton.Position = UDim2.new(0, 370, 0, 2)
+closeButton.BackgroundTransparency = 10
+closeButton.Text = "X"
+closeButton.TextSize = 30
+closeButton.TextColor3 = Color3.new(250,250,250)
+closeButton.Parent = Gui1o
+
+local function destroyMenu()
+	Gui1o:Destroy()
+	menu1a:Destroy()
+end
+
+closeButton.MouseButton1Click:Connect(destroyMenu)
+
+local Pal2= Instance.new("Frame")
+Pal2.Size = UDim2.new(0, 405, 0, 2)
+Pal2.Position = UDim2.new(0, 2, 0, 37)
+Pal2.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Pal2.BackgroundTransparency = 0.2
+Pal2.BorderSizePixel = 0
+Pal2.Parent = Gui1o
+
+local Pal4= Instance.new("Frame")
+Pal4.Size = UDim2.new(0, 2, 0, 213)
+Pal4.Position = UDim2.new(0, 260, 0, 39)
+Pal4.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Pal4.BackgroundTransparency = 0.2
+Pal4.BorderSizePixel = 0
+Pal4.Parent = Gui1o
+Pal4.Visible = false
+
+local Pal3= Instance.new("Frame")
+Pal3.Size = UDim2.new(0, 2, 0, 213)
+Pal3.Position = UDim2.new(0, 112, 0, 39)
+Pal3.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Pal3.BackgroundTransparency = 0.2
+Pal3.BorderSizePixel = 0
+Pal3.Parent = Gui1o
+
+local menuTog = false
+
+local function menuTog()
+    if menuTog then
+    	Gui1o:TweenPosition(UDim2.new(0.5, -250, 1, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Back, 1, true)
+        menuTog = false
+    else
+    	Gui1o:TweenPosition(UDim2.new(0.5, -250, 0.5, -130), Enum.EasingDirection.Out, Enum.EasingStyle.Back, 1, true)
+        menuTog = true
+    end
+end
+
+menu1a.MouseButton1Click:Connect(menuTog)
+
+local Pal1tab= Instance.new("Frame")
+Pal1tab.Size = UDim2.new(0, 2, 0, 213)
+Pal1tab.Position = UDim2.new(0, 112, 0, 39)
+Pal1tab.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Pal1tab.BackgroundTransparency = 0
+Pal1tab.BorderSizePixel = 0
+Pal1tab.Parent = Gui1o
+Pal1tab.Visible = false
+
+local button = Instance.new("TextButton")
+button.Parent = Pal1tab
+button.Size = UDim2.new(0, 280, 0, 25)
+button.Position = UDim2.new(0, 8, 0, 5)
+button.Text = "Suslik Hub"
+button.TextSize = 18
+button.TextColor3 = Color3.fromRGB(255,255,255)
+button.BorderSizePixel = 2
+button.BorderColor3 = Color3.fromRGB(40,40,40)
+button.BackgroundColor3 = Color3.fromRGB(12,12,12)
+
+local button1 = Instance.new("TextButton")
+button1.Parent = Pal1tab
+button1.Size = UDim2.new(0, 130, 0, 20)
+button1.Position = UDim2.new(0, 8, 0, 37)
+button1.Text = "Creators"
+button1.TextSize = 18
+button1.TextColor3 = Color3.fromRGB(255,255,255)
+button1.BorderSizePixel = 2
+button1.BorderColor3 = Color3.fromRGB(40,40,40)
+button1.BackgroundColor3 = Color3.fromRGB(12,12,12)
+
+local button2 = Instance.new("TextButton")
+button2.Parent = Pal1tab
+button2.Size = UDim2.new(0, 130, 0, 17)
+button2.Position = UDim2.new(0, 8, 0, 65)
+button2.Text = "Owner: Krutoy Suslik"
+button2.TextSize = 10
+button2.TextColor3 = Color3.fromRGB(255,255,255)
+button2.BorderSizePixel = 2
+button2.BorderColor3 = Color3.fromRGB(40,40,40)
+button2.BackgroundColor3 = Color3.fromRGB(12,12,12)
+
+button2.MouseButton1Click:Connect(function()
+	print("Krutoy Suslik Top")
+end)
+
+local button3 = Instance.new("TextButton")
+button3.Parent = Pal1tab
+button3.Size = UDim2.new(0, 130, 0, 17)
+button3.Position = UDim2.new(0, 8, 0, 85)
+button3.Text = "Assistant: Krain"
+button3.TextSize = 10
+button3.TextColor3 = Color3.fromRGB(255,255,255)
+button3.BorderSizePixel = 2
+button3.BorderColor3 = Color3.fromRGB(40,40,40)
+button3.BackgroundColor3 = Color3.fromRGB(12,12,12)
+
+button3.MouseButton1Click:Connect(function()
+	print("Krain Top")
+end)
+
+local button4 = Instance.new("TextButton")
+button4.Parent = Pal1tab
+button4.Size = UDim2.new(0, 130, 0, 20)
+button4.Position = UDim2.new(0, 158, 0, 37)
+button4.Text = "Support"
+button4.TextSize = 18
+button4.TextColor3 = Color3.fromRGB(255,255,255)
+button4.BorderSizePixel = 2
+button4.BorderColor3 = Color3.fromRGB(40,40,40)
+button4.BackgroundColor3 = Color3.fromRGB(12,12,12)
+
+local button5 = Instance.new("TextButton")
+button5.Parent = Pal1tab
+button5.Size = UDim2.new(0, 130, 0, 17)
+button5.Position = UDim2.new(0, 158, 0, 65)
+button5.Text = "t.me/Krutoy_Suslik_Support"
+button5.TextSize = 7
+button5.TextColor3 = Color3.fromRGB(255,255,255)
+button5.BorderSizePixel = 2
+button5.BorderColor3 = Color3.fromRGB(40,40,40)
+button5.BackgroundColor3 = Color3.fromRGB(12,12,12)
+
+button5.MouseButton1Click:Connect(function()
+	setclipboard("t.me/Krutoy_Suslik_Support")
+end)
+
+local button6 = Instance.new("TextButton")
+button6.Parent = Pal1tab
+button6.Size = UDim2.new(0, 280, 0, 13)
+button6.Position = UDim2.new(0, 8, 0, 108)
+button6.Text = "Telegram Channel"
+button6.TextSize = 12
+button6.TextColor3 = Color3.fromRGB(255,255,255)
+button6.BorderSizePixel = 2
+button6.BorderColor3 = Color3.fromRGB(40,40,40)
+button6.BackgroundColor3 = Color3.fromRGB(12,12,12)
+
+local button7 = Instance.new("TextButton")
+button7.Parent = Pal1tab
+button7.Size = UDim2.new(0, 280, 0, 13)
+button7.Position = UDim2.new(0, 8, 0, 128)
+button7.Text = "https://t.me/KrutoySuslik"
+button7.TextSize = 10
+button7.TextColor3 = Color3.fromRGB(255,255,255)
+button7.BorderSizePixel = 2
+button7.BorderColor3 = Color3.fromRGB(40,40,40)
+button7.BackgroundColor3 = Color3.fromRGB(12,12,12)
+
+button7.MouseButton1Click:Connect(function()
+	setclipboard("https://t.me/KrutoySuslik")
+end)
+
+local button8 = Instance.new("TextButton")
+button8.Parent = Pal1tab
+button8.Size = UDim2.new(0, 280, 0, 13)
+button8.Position = UDim2.new(0, 8, 0, 148)
+button8.Text = "Discord Server, YouTube"
+button8.TextSize = 12
+button8.TextColor3 = Color3.fromRGB(255,255,255)
+button8.BorderSizePixel = 2
+button8.BorderColor3 = Color3.fromRGB(40,40,40)
+button8.BackgroundColor3 = Color3.fromRGB(12,12,12)
+
+local button9 = Instance.new("TextButton")
+button9.Parent = Pal1tab
+button9.Size = UDim2.new(0, 280, 0, 13)
+button9.Position = UDim2.new(0, 8, 0, 168)
+button9.Text = "https://discord.com/invite/suslikhub"
+button9.TextSize = 10
+button9.TextColor3 = Color3.fromRGB(255,255,255)
+button9.BorderSizePixel = 2
+button9.BorderColor3 = Color3.fromRGB(40,40,40)
+button9.BackgroundColor3 = Color3.fromRGB(12,12,12)
+
+button9.MouseButton1Click:Connect(function()
+	setclipboard("https://discord.com/invite/suslikhub")
+end)
+
+local button10 = Instance.new("TextButton")
+button10.Parent = Pal1tab
+button10.Size = UDim2.new(0, 280, 0, 13)
+button10.Position = UDim2.new(0, 8, 0, 190)
+button10.Text = "https://youtube.com/@Krutoy-Suslik"
+button10.TextSize = 10
+button10.TextColor3 = Color3.fromRGB(255,255,255)
+button10.BorderSizePixel = 2
+button10.BorderColor3 = Color3.fromRGB(40,40,40)
+button10.BackgroundColor3 = Color3.fromRGB(12,12,12)
+
+button10.MouseButton1Click:Connect(function()
+	setclipboard("https://youtube.com/@Krutoy-Suslik")
+end)
+
+local Pal2tab= Instance.new("Frame")
+Pal2tab.Size = UDim2.new(0, 2, 0, 213)
+Pal2tab.Position = UDim2.new(0, 112, 0, 39)
+Pal2tab.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Pal2tab.BackgroundTransparency = 0
+Pal2tab.BorderSizePixel = 0
+Pal2tab.Parent = Gui1o
+Pal2tab.Visible = false
+
+-- tab 2
+local function createButton2(text, position)
+    local Button2 = Instance.new("TextButton")
+    Button2.Size = UDim2.new(0, 140, 0, 25)
+    Button2.Text = text
+    Button2.TextColor3 = Color3.new(64, 64, 64)
+    Button2.Position = position
+    Button2.Parent = Pal2tab
+    Button2.Style = Enum.ButtonStyle.RobloxButton
+    Button2.BackgroundTransparency = 0.2
+    Button2.BackgroundColor3 = Color3.new(0.5, 0.5, 0.5)
+    return Button2
+end
+
+-- tab 3
+
+local Pal3tab= Instance.new("Frame")
+Pal3tab.Size = UDim2.new(0, 2, 0, 213)
+Pal3tab.Position = UDim2.new(0, 112, 0, 39)
+Pal3tab.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Pal3tab.BackgroundTransparency = 0
+Pal3tab.BorderSizePixel = 0
+Pal3tab.Parent = Gui1o
+Pal3tab.Visible = false
+
+local function createButton3(text, position)
+    local Button3 = Instance.new("TextButton")
+    Button3.Size = UDim2.new(0, 140, 0, 25)
+    Button3.Text = text
+    Button3.TextColor3 = Color3.new(64, 64, 64)
+    Button3.Position = position
+    Button3.Parent = Pal3tab
+    Button3.Style = Enum.ButtonStyle.RobloxButton
+    Button3.BackgroundTransparency = 0.2
+    Button3.BackgroundColor3 = Color3.new(0.5, 0.5, 0.5)
+    return Button3
+end
+
+-- tab4
+
+local Pal4tab= Instance.new("Frame")
+Pal4tab.Size = UDim2.new(0, 2, 0, 213)
+Pal4tab.Position = UDim2.new(0, 112, 0, 39)
+Pal4tab.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Pal4tab.BackgroundTransparency = 0
+Pal4tab.BorderSizePixel = 0
+Pal4tab.Parent = Gui1o
+Pal4tab.Visible = false
+
+local function createButton4(text, position)
+    local Button4 = Instance.new("TextButton")
+    Button4.Size = UDim2.new(0, 140, 0, 25)
+    Button4.Text = text
+    Button4.TextColor3 = Color3.new(64, 64, 64)
+    Button4.Position = position
+    Button4.Parent = Pal4tab
+    Button4.Style = Enum.ButtonStyle.RobloxButton
+    Button4.BackgroundTransparency = 0.2
+    Button4.BackgroundColor3 = Color3.new(0.5, 0.5, 0.5)
+    return Button4
+end
+
+-- tab5
+
+local Pal5tab= Instance.new("Frame")
+Pal5tab.Size = UDim2.new(0, 2, 0, 213)
+Pal5tab.Position = UDim2.new(0, 112, 0, 39)
+Pal5tab.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Pal5tab.BackgroundTransparency = 0
+Pal5tab.BorderSizePixel = 0
+Pal5tab.Parent = Gui1o
+Pal5tab.Visible = false
+
+local function createButton5(text, position)
+    local Button5 = Instance.new("TextButton")
+    Button5.Size = UDim2.new(0, 140, 0, 25)
+    Button5.Text = text
+    Button5.TextColor3 = Color3.new(64, 64, 64)
+    Button5.Position = position
+    Button5.Parent = Pal5tab
+    Button5.Style = Enum.ButtonStyle.RobloxButton
+    Button5.BackgroundTransparency = 0.2
+    Button5.BackgroundColor3 = Color3.new(0.5, 0.5, 0.5)
+    return Button5
+end
+
+-- tab6
+
+local Pal6tab= Instance.new("Frame")
+Pal6tab.Size = UDim2.new(0, 2, 0, 213)
+Pal6tab.Position = UDim2.new(0, 112, 0, 39)
+Pal6tab.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Pal6tab.BackgroundTransparency = 0
+Pal6tab.BorderSizePixel = 0
+Pal6tab.Parent = Gui1o
+Pal6tab.Visible = false
+
+local function createButton6(text, position)
+    local Button6 = Instance.new("TextButton")
+    Button6.Size = UDim2.new(0, 140, 0, 25)
+    Button6.Text = text
+    Button6.TextColor3 = Color3.new(64, 64, 64)
+    Button6.Position = position
+    Button6.Parent = Pal6tab
+    Button6.Style = Enum.ButtonStyle.RobloxButton
+    Button6.BackgroundTransparency = 0.2
+    Button6.BackgroundColor3 = Color3.new(0.5, 0.5, 0.5)
+    return Button6
+end
+
+-- tab7
+
+local Pal7tab= Instance.new("Frame")
+Pal7tab.Size = UDim2.new(0, 2, 0, 213)
+Pal7tab.Position = UDim2.new(0, 112, 0, 39)
+Pal7tab.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Pal7tab.BackgroundTransparency = 0
+Pal7tab.BorderSizePixel = 0
+Pal7tab.Parent = Gui1o
+Pal7tab.Visible = false
+
+local function createButton7(text, position)
+    local Button7 = Instance.new("TextButton")
+    Button7.Size = UDim2.new(0, 140, 0, 25)
+    Button7.Text = text
+    Button7.TextColor3 = Color3.new(64, 64, 64)
+    Button7.Position = position
+    Button7.Parent = Pal7tab
+    Button7.Style = Enum.ButtonStyle.RobloxButton
+    Button7.BackgroundTransparency = 0.2
+    Button7.BackgroundColor3 = Color3.new(0.5, 0.5, 0.5)
+    return Button7
+end
+
+-- tab8
+
+local Pal8tab= Instance.new("Frame")
+Pal8tab.Size = UDim2.new(0, 2, 0, 213)
+Pal8tab.Position = UDim2.new(0, 112, 0, 39)
+Pal8tab.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Pal8tab.BackgroundTransparency = 0
+Pal8tab.BorderSizePixel = 0
+Pal8tab.Parent = Gui1o
+Pal8tab.Visible = false
+
+local function createButton8(text, position)
+    local Button8 = Instance.new("TextButton")
+    Button8.Size = UDim2.new(0, 140, 0, 25)
+    Button8.Text = text
+    Button8.TextColor3 = Color3.new(64, 64, 64)
+    Button8.Position = position
+    Button8.Parent = Pal8tab
+    Button8.Style = Enum.ButtonStyle.RobloxButton
+    Button8.BackgroundTransparency = 0.2
+    Button8.BackgroundColor3 = Color3.new(0.5, 0.5, 0.5)
+    return Button8
+end
+
+local butt1 = createButton2("Speed and Jump Script", UDim2.new(0, 5, 0, 3))
+
+butt1.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/KrutoySuslik/-WalkSpeed-and-PowerJamp-Suslik-Hub-/main/KrutoySuslik"))()
+end)
+
+local butt2 = createButton2("Anti-AFK", UDim2.new(0, 5, 0, 30))
+
+butt2.MouseButton1Click:Connect(function()
+	local VirtualInputManager = game:GetService("VirtualInputManager")
+while task.wait() do
+        VirtualInputManager:SendKeyEvent(true, "Space", false, game)
+        task.wait(.2)
+        VirtualInputManager:SendKeyEvent(false, "Space", false, game)
+        task.wait(300)
+end
+end)
+
+local butt3 = createButton2("Night Vision", UDim2.new(0, 5, 0, 55))
+
+butt3.MouseButton1Click:Connect(function()
+	local Light = game:GetService("Lighting")
+
+
+
+function dofullbright()
+
+Light.Ambient = Color3.new(1, 1, 1)
+
+Light.ColorShift_Bottom = Color3.new(1, 1, 1)
+
+Light.ColorShift_Top = Color3.new(1, 1, 1)
+
+end
+
+
+
+dofullbright()
+
+
+
+Light.LightingChanged:Connect(dofullbright)
+end)
+
+local butt4 = createButton2("Anti-Lag", UDim2.new(0, 5, 0, 80))
+
+butt4.MouseButton1Click:Connect(function()
+	local ToDisable = {
+	Textures = false,
+	VisualEffects = true,
+	Parts = true,
+	Particles = true,
+	Sky = true
+}
+
+local ToEnable = {
+	FullBright = false
+}
+
+local Stuff = {}
+
+for _, v in next, game:GetDescendants() do
+	if ToDisable.Parts then
+		if v:IsA("Part") or v:IsA("Union") or v:IsA("BasePart") then
+			v.Material = Enum.Material.SmoothPlastic
+			table.insert(Stuff, 1, v)
+		end
+	end
+	
+	if ToDisable.Particles then
+		if v:IsA("ParticleEmitter") or v:IsA("Smoke") or v:IsA("Explosion") or v:IsA("Sparkles") or v:IsA("Fire") then
+			v.Enabled = false
+			table.insert(Stuff, 1, v)
+		end
+	end
+	
+	if ToDisable.VisualEffects then
+		if v:IsA("BloomEffect") or v:IsA("BlurEffect") or v:IsA("DepthOfFieldEffect") or v:IsA("SunRaysEffect") then
+			v.Enabled = false
+			table.insert(Stuff, 1, v)
+		end
+	end
+	
+	if ToDisable.Textures then
+		if v:IsA("Decal") or v:IsA("Texture") then
+			v.Texture = ""
+			table.insert(Stuff, 1, v)
+		end
+	end
+	
+	if ToDisable.Sky then
+		if v:IsA("Sky") then
+			v.Parent = nil
+			table.insert(Stuff, 1, v)
+		end
+	end
+end
+end)
+
+local butt5 = createButton2("ESP Gui", UDim2.new(0, 5, 0, 105))
+
+butt5.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/KrutoySuslik/-ESP-Suslik-Hub-/main/ESP-KrutoySuslik-SuslikHub', true))()
+end)
+
+local butt6 = createButton2("BTools", UDim2.new(0, 5, 0, 130))
+
+butt6.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
+end)
+
+local butt7 = createButton2("BTools+", UDim2.new(0, 5, 0, 155))
+
+butt7.MouseButton1Click:Connect(function()
+	loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)("") 
+end)
+
+local butt8 = createButton2("RTX Gui", UDim2.new(0, 5, 0, 180))
+
+butt8.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/RTX%20Gui%20Hub%20Obfuscator'))()
+end)
+
+local butt9 = createButton2("Fly Gui", UDim2.new(0, 153, 0, 3))
+
+butt9.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/kip1231/proverki/main/Protected_7494382346940781.lua"))()
+end)
+
+local butt10 = createButton2("ShiftLock", UDim2.new(0, 153, 0, 30))
+
+butt10.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/MiniNoobie/ShiftLockx/main/Shiftlock-MiniNoobie",true))()
+end)
+
+local function createTabButton(text, position)
+    local tabButton = Instance.new("TextButton")
+    tabButton.Size = UDim2.new(0, 110, 0, 25)
+    tabButton.Text = text
+    tabButton.TextColor3 = Color3.new(64, 64, 64)
+    tabButton.Position = position
+    tabButton.Parent = Pal2
+    tabButton.Style = Enum.ButtonStyle.RobloxButton
+    tabButton.BackgroundTransparency = 0.2
+    tabButton.BackgroundColor3 = Color3.new(0.5, 0.5, 0.5)
+    return tabButton
+end
+
+local tab1 = createTabButton("Suslik Hub", UDim2.new(0, 0, 1, 0))
+
+tab1.MouseButton1Click:Connect(function()
+	Pal4.Visible = false
+	Pal1tab.Visible = true
+	Pal2tab.Visible = false
+	Pal3tab.Visible = false
+	Pal4tab.Visible = false
+	Pal5tab.Visible = false
+	Pal6tab.Visible = false
+	Pal7tab.Visible = false
+	Pal8tab.Visible = false
+end)
+
+local tab2 = createTabButton("Other Scripts", UDim2.new(0, 0, 1, 25))
+
+tab2.MouseButton1Click:Connect(function()
+	Pal4.Visible = true
+	Pal1tab.Visible = false
+	Pal2tab.Visible = true
+	Pal3tab.Visible = false
+	Pal4tab.Visible = false
+	Pal5tab.Visible = false
+	Pal6tab.Visible = false
+	Pal7tab.Visible = false
+	Pal8tab.Visible = false
+end)
+
+local tab3 = createTabButton("3", UDim2.new(0, 0, 1, 50))
+
+tab3.MouseButton1Click:Connect(function()
+	Pal4.Visible = true
+	Pal1tab.Visible = false
+	Pal2tab.Visible = false
+	Pal3tab.Visible = true
+	Pal4tab.Visible = false
+	Pal5tab.Visible = false
+	Pal6tab.Visible = false
+	Pal7tab.Visible = false
+	Pal8tab.Visible = false
+end)
+
+local tab4 = createTabButton("4", UDim2.new(0, 0, 1, 75))
+
+tab4.MouseButton1Click:Connect(function()
+	Pal4.Visible = true
+	Pal1tab.Visible = false
+	Pal2tab.Visible = false
+	Pal3tab.Visible = false
+	Pal4tab.Visible = true
+	Pal5tab.Visible = false
+	Pal6tab.Visible = false
+	Pal7tab.Visible = false
+	Pal8tab.Visible = false
+end)
+
+local tab5 = createTabButton("5", UDim2.new(0, 0, 1, 100))
+
+tab5.MouseButton1Click:Connect(function()
+	Pal4.Visible = true
+	Pal1tab.Visible = false
+	Pal2tab.Visible = false
+	Pal3tab.Visible = false
+	Pal4tab.Visible = false
+	Pal5tab.Visible = true
+	Pal6tab.Visible = false
+	Pal7tab.Visible = false
+	Pal8tab.Visible = false
+end)
+
+local tab6 = createTabButton("6", UDim2.new(0, 0, 1, 125))
+
+tab6.MouseButton1Click:Connect(function()
+	Pal4.Visible = true
+	Pal1tab.Visible = false
+	Pal2tab.Visible = false
+	Pal3tab.Visible = false
+	Pal4tab.Visible = false
+	Pal5tab.Visible = false
+	Pal6tab.Visible = true
+	Pal7tab.Visible = false
+	Pal8tab.Visible = false
+end)
+
+local tab7 = createTabButton("7", UDim2.new(0, 0, 1, 150))
+
+tab7.MouseButton1Click:Connect(function()
+	Pal4.Visible = true
+	Pal1tab.Visible = false
+	Pal2tab.Visible = false
+	Pal3tab.Visible = false
+	Pal4tab.Visible = false
+	Pal5tab.Visible = false
+	Pal6tab.Visible = false
+	Pal7tab.Visible = true
+	Pal8tab.Visible = false
+end)
+
+local tab8 = createTabButton("8", UDim2.new(0, 0, 1, 175))
+
+tab8.MouseButton1Click:Connect(function()
+	Pal4.Visible = true
+	Pal1tab.Visible = false
+	Pal2tab.Visible = false
+	Pal3tab.Visible = false
+	Pal4tab.Visible = false
+	Pal5tab.Visible = false
+	Pal6tab.Visible = false
+	Pal7tab.Visible = false
+	Pal8tab.Visible = true
+end)
